@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fresh Food Delivery</title>
+
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+    body,html{
+        font-family: 'Oswald', sans-serif;
+        background:url("background.jpg") no-repeat center;
+        background-size: cover;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .top-header{
+        font-size: 3em;
+    }
+
+    .section1{
+        height: 500px;
+        color: white;
+
+    }
+
+    .section2{
+        font-size: 2em;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        opacity: .75;
+
+    }
+
+    #myalert{
+        display: none;
+    }
+
+    .closed{
+        background-color: #DFF0D8;
+        border: none;
+        float: right;
+    }
+</style>
+<body>
+<nav class="navbar navbar-default fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Eat Fresh Stay Fresh</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li ><a class="couponalert" href="#">Coupons</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+<div class="alert alert-success" id="myalert" role="alert" align="center" style="font-size:2em">
+<button style="font-size:2em" type="button" class="closed">
+  <span aria-hidden="true">&times;</span>
+</button>
+  <strong><u>Available Coupons</u><br> Use this <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">LINK</a> to receive 10 percent off of your first Order from Takeout Kit</strong>
+</div>
+
+<section class="section1">
+  <div class="container">
+    <div class="row" align="center">
+        <div class="col-md-12 top-header">Stay Healthy and Energetic With These Top Food Delivery Services </div>
+
+
+    </div>
+ </div>
+</section>
+
+<section class="section2">
+<div class="row" align="center">
+    <div class="col-md-12">
+        <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">Takeout Kit</a>
+    </div>
+    <div class="container">
+    <div class="row" style="font-size:.76em" >
+        <div class="col-md-12" >
+Takeout Kit is a great choice if you love to try out food from different parts of the world. With 17 cuisines to choose from you can never run out of options. Takeout Kit will ship you fresh ingredients on demand with no subscription necessary. You can get 10 percent off on your first order by <a href="https://takeoutkit.com?rfsn=1589618.63e1cd&utm_source=refersion&utm_medium=affiliate&utm_campaign=1589618.63e1cd">CLICKING HERE</a> and using their email.
+        </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+
+    $('.couponalert').on("click", function(){
+
+        $('#myalert').fadeIn(2000)
+
+    })
+
+    $('.closed').click(function() {
+     $('#myalert').css("display", "none");
+     });
+
+
+});
+</script>
+</body>
+</html>
